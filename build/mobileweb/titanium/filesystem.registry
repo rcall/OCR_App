@@ -1,4 +1,4 @@
-ts	1350770798000
+ts	1350773256000
 Default-Landscape.jpg	36232
 Default-Portrait.jpg	28479
 Default.jpg	17184
@@ -24,7 +24,7 @@ mobileweb
 	splash
 		README	2040
 		appc.png	11665
-		splash.css	1276
+		splash.css	1339
 		splash.html	0
 		titanium.png	10902
 modules
@@ -348,15 +348,15 @@ titanium
 		_.js	1491
 	Ti.js	10886
 	package.json	675
-titanium.css	39469
+titanium.css	39532
 titanium.js	514223
 ui
 	common
-		FirstView.js	532
-		index.html	971
+		FirstView.js	641
+		index.html	1021
 	handheld
 		ApplicationWindow.js	477
 		android
 			ApplicationWindow.js	482
 	tablet
-		ApplicationWindow.js	474
+		ApplicationWindow.js	497
