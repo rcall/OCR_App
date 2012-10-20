@@ -5,13 +5,17 @@ function ApplicationWindow() {
 		
 	//create component instance
 	var self = Ti.UI.createWindow({
-		backgroundColor:'#ffffff'
+		backgroundColor:'#ffffff',
+		navBarHidden:true,
+		exitOnClose:true
 	});
 		
 	//construct UI
-	var indexView = Ti.UI.createWebView({url: '/ui/common/index.html'});
-	self.add(indexView);
+	var firstView = new FirstView();
+	self.add(firstView);
 	
 	return self;
+}
+
 //make constructor function the public component interface
 module.exports = ApplicationWindow;
