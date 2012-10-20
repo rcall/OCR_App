@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">jtA8wq9B9B8mM2HRacRoaySoggsERS2U</property>
+    <property name="acs-oauth-key-production" type="string">ssb8AOIxXNGyMuQXzb88rPRY5t6EiYvq</property>
+    <property name="acs-api-key-production" type="string">fZyfKas7zIj0NH0OJvZJutms7PxW7bFK</property>
+    <property name="acs-oauth-secret-development" type="string">Xz5dioStM7fmIu4Qkd1ZkhnN20vaeacW</property>
+    <property name="acs-oauth-key-development" type="string">dUjwvs0vYbsQVdYdnMqNrsM220J90Vq0</property>
+    <property name="acs-api-key-development" type="string">mVfMtsSVYR4k1rKwOlpT0Oz2ARXnaLU6</property>
     <deployment-targets>
         <target device="mobileweb">true</target>
-        <target device="iphone">false</target>
-        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
         <target device="android">false</target>
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.3.GA</sdk-version>
     <id>com.hackucla.ocr.app</id>
-    <name>OCR_Application</name>
+    <name>OCR_App</name>
     <version>1.0</version>
-    <publisher>Kyle</publisher>
+    <publisher>gamesquad</publisher>
     <url>http://</url>
     <description>not specified</description>
-    <copyright>2012 by Kyle</copyright>
+    <copyright>2012 by gamesquad</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
@@ -23,7 +29,7 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>bac83764-886d-4ba1-96f6-43d9fe2ca0d9</guid>
+    <guid>9d0b4af3-2e79-433b-b4e8-705f19290339</guid>
     <property name="ti.ui.defaultunit">system</property>
     <iphone>
         <orientations device="iphone">
@@ -45,5 +51,7 @@
         </splash>
         <theme>default</theme>
     </mobileweb>
-    <modules/>
+    <modules>
+        <module platform="commonjs" version="2.3.0">ti.cloud</module>
+    </modules>
 </ti:app>
