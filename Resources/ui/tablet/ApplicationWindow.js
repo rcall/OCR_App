@@ -13,5 +13,7 @@ function ApplicationWindow() {
 	self.add(indexView);
 	
 	return self;
+}
+	
 //make constructor function the public component interface
 module.exports = ApplicationWindow;
