@@ -14,10 +14,18 @@ function FirstView() {
 	
 	//Add behavior for UI
 	label.addEventListener('click', function(e) {
-		alert(e.source.text);
+		if(Ti.Media.isCameraSupported){
+			Ti.Media.showCamera(pictureTaken);
+		}
 	});
 	
 	return self;
 }
+
+
+function pictureTaken() {
+	alert("wooo");
+}
+
 
 module.exports = FirstView;
