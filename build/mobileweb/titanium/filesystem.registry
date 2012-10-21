@@ -1,10 +1,10 @@
-ts	1350770798000
+ts	1350771825000
 Default-Landscape.jpg	36232
 Default-Portrait.jpg	28479
 Default.jpg	17184
 KS_nav_ui.png	1158
 KS_nav_views.png	1074
-app.js	1526
+app.js	1570
 appicon.png	19109
 apple-touch-icon-114x114-precomposed.png	15820
 apple-touch-icon-57x57-precomposed.png	6790
@@ -20,11 +20,11 @@ mobileweb
 		Default-Portrait.png	76153
 		Default.jpg	17184
 		Default.png	110858
-		README	492
+		README	500
 	splash
-		README	2040
+		README	2089
 		appc.png	11665
-		splash.css	1276
+		splash.css	1339
 		splash.html	0
 		titanium.png	10902
 modules
@@ -348,15 +348,15 @@ titanium
 		_.js	1491
 	Ti.js	10886
 	package.json	675
-titanium.css	39469
-titanium.js	514223
+titanium.css	39532
+titanium.js	515213
 ui
 	common
-		FirstView.js	532
-		index.html	971
+		FirstView.js	555
+		index.html	1082
 	handheld
-		ApplicationWindow.js	477
+		ApplicationWindow.js	496
 		android
-			ApplicationWindow.js	482
+			ApplicationWindow.js	503
 	tablet
-		ApplicationWindow.js	474
+		ApplicationWindow.js	491
