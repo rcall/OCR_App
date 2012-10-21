@@ -11,7 +11,6 @@ function getImageURL(image_file) {
 	$.ajax({
         type: "POST",
         url: sendURL,
-        data: ,
         success: function (data){
           return data;
         }
@@ -38,8 +37,7 @@ function sendOCR(cloud_image) {
 function checkOCR(job_url) {
 	$.ajax({
         type: "GET",
-        url: "<JobURL>job_url</JobURL>,
-        data: ,
+        url: job_url,
         success: function (data){
           //check this xml data for successful job, status must be == "Finished"
           //if finished, xml <download><file><uri></uri></file></download> will contain files
