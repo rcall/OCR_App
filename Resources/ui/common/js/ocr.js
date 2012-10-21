@@ -21,17 +21,25 @@ function getImageURL(image_file) {
     });
 }
 
-function sendOCR(cloud_image) {
+function sendOCR(cloud_image) {	
 	
+	var sendURL = 'http://api.ocrapiservice.com/1.0/rest/ocr';
+	var xmlDoc = '<Job><InputURL>' + cloud_image + '</InputURL></Job>';
+
+	console.log('new mother fuckin shit');
+	$.post(sendURL, { 	image: "http://ocrapiservice.com/static/images/examples/english_text.png", 
+						language: "en", 
+						apikey: "d52P5jnAFf" 
+					},
+   		function(data) {
+     		alert("Data Loaded: " + data);
+   		});
 	
-	var ocrKey = '3pa5bP_YtlYkTThp0XnVnJb6m2C6BnX-';
-	var sendURL = 'http://svc.webservius.com/v1/wisetrend/wiseocr/submit?wsvKey=' + ocrKey;
-	
+	/*
 	$.ajax({
         type: "POST",
         url: sendURL,
-        processData: false,
-        data: "<Job><InputURL>" + cloud_image + "</InputURL></Job>",
+        data: xmlDoc,
         // contentType: "text/xml; charset=utf-8",
         success: function (data){
         	
@@ -41,7 +49,7 @@ function sendOCR(cloud_image) {
           //get job url from xml
           //if no error, return job url
         }
-    });
+   }); */
     console.log('inside after');
 }
 
