@@ -1,8 +1,5 @@
 //Application Window Component Constructor
-function ApplicationWindow() {
-	//load component dependencies
-	var FirstView = require('ui/common/FirstView');
-		
+function ApplicationWindow() {		
 	//create component instance
 	var self = Ti.UI.createWindow({
 		backgroundColor:'#ffffff',
@@ -10,9 +7,8 @@ function ApplicationWindow() {
 		exitOnClose:true
 	});
 		
-	//construct UI
-	var firstView = new FirstView();
-	self.add(firstView);
+	var indexView = Ti.UI.createWebView({url: '/ui/common/html/home.html'});
+	self.add(indexView);
 	
 	return self;
 }
