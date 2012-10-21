@@ -24,10 +24,12 @@ function getImageURL(image_file) {
 function sendOCR(cloud_image) {	
 	
 	var sendURL = 'http://api.ocrapiservice.com/1.0/rest/ocr';
-	var xmlDoc = '<Job><InputURL>' + cloud_image + '</InputURL></Job>';
+
+	var f = Ti.Filesystem.getFile("/mobileweb/apple_startup_images/Default.jpg").read();
+	
 
 	console.log('new mother fuckin shit');
-	$.post(sendURL, { 	image: "http://ocrapiservice.com/static/images/examples/english_text.png", 
+	$.post(sendURL, { 	image: f.text,
 						language: "en", 
 						apikey: "d52P5jnAFf" 
 					},
